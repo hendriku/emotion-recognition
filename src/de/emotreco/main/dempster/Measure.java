@@ -53,6 +53,17 @@ public class Measure{
 	}
 
 	/**
+	 * Sorts a copy of the entry list and return the MeasureEntry with the highest probability.
+	 *
+	 * @return the top of the ordered measure entries. Exception if empty.
+	 */
+	public MeasureEntry getWinner() {
+		List<MeasureEntry> prioList = new ArrayList<>(entries);
+		prioList.sort((o1, o2) -> Double.compare(o2.getProbability(), o1.getProbability()));
+		return prioList.get(0);
+	}
+
+	/**
 	 * Returns all Measure-Entries
 	 * 
 	 * @return a List of all Measure-Entries

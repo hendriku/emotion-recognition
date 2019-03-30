@@ -9,22 +9,22 @@ import de.emotreco.featuremodel.FeatureImporter;
 import de.emotreco.main.dempster.DempsterHandler;
 import de.emotreco.main.dempster.Measure;
 import de.emotreco.main.dempster.MeasureEntry;
+import de.emotreco.utils.MathUtils;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
-class EmotionClassifier {
+public class EmotionClassifier {
 
     /**
      * Reads, processes, classifies an amount of frames defined in a .csv file which should match the CSVImporter.
-     * Uses <code>printClassificationResult</code> for printing the result.
+     * Uses <code>printClassificationResult</code> for printing the result which is also returned for debug purposes .
      *
      * The conversion happens through three abstract layers: csvmodel to featuremodel to facialexpressionmodel
      *
      * @param fileName path to the .csv file with the frames in it.
+     * @return the measured emotions, null if fail
      */
-    void classifyFile(String fileName) {
+    public Measure[] classifyFile(String fileName) {
         try {
             System.out.println("Starting with import of csvmodel.....");
             CSVFrame[] csvFrames = new CSVImporter(fileName).readFile();
@@ -35,17 +35,23 @@ class EmotionClassifier {
             FeatureFrame[] featureFrames = new FeatureImporter().convert(csvFrames);
 
             System.out.println("Conversion into featuremodel done.");
-            System.out.println("Starting description of features...");
-            FacialExpressionDescriptor descriptor = new FacialExpressionDescriptor(featureFrames);
+            System.out.println("Building a descriptor...");
 
+            FacialExpressionDescriptor descriptor = new FacialExpressionDescriptor(featureFrames);
+            Measure[] emotions = new Measure[featureFrames.length];
+
+            System.out.println("Done. Classifying frames now...");
             for (int i = 0; i < featureFrames.length; i++) {
-                Measure emotion = classifyFrame(featureFrames[i], descriptor);
-                printClassificationResult(emotion, i);
+                emotions[i] = classifyFrame(featureFrames[i], descriptor);
+                printClassificationResult(emotions[i], i);
             }
             System.out.println("Classification done!");
+
+            return emotions;
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
     /**
@@ -92,14 +98,11 @@ class EmotionClassifier {
      * @param i the index of the frame for cleaner visual appearance
      */
     private void printClassificationResult(Measure emotion, int i) {
-        List<MeasureEntry> prioList = new ArrayList<>(emotion.getMeasureEntrys());
-        prioList.sort((o1, o2) -> Double.compare(o2.getProbability(), o1.getProbability()));
-
-        MeasureEntry winner = prioList.get(0);
+        MeasureEntry winner = emotion.getWinner();
         System.out.println((i+1) + ". " + winner.getEmotion()
-                + " = Plausability: " + emotion.calculatePlausability(winner.getEmotionIndex())
-                + ", Belief: " + emotion.calculateBelief(winner.getEmotionIndex())
-                + ", Doubt: " + emotion.calculateDoubt(winner.getEmotionIndex()));
+                + " = Plausability: " + MathUtils.round(emotion.calculatePlausability(winner.getEmotionIndex()))
+                + ", Belief: " + MathUtils.round(emotion.calculateBelief(winner.getEmotionIndex()))
+                + ", Doubt: " + MathUtils.round(emotion.calculateDoubt(winner.getEmotionIndex())));
     }
 
 }

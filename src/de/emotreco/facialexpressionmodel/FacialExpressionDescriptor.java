@@ -11,8 +11,8 @@ import java.util.Arrays;
  */
 public class FacialExpressionDescriptor {
 
-    private static int amountOfTrainingFrames = 35;
-    private static float[] featureFactor = new float[]{1.15f, 10f, 1.5f, 2.2f, 4f, 1.35f, 1.5f};
+    public static final int TRAINING_FRAME_AMOUNT = 35;
+    private static final float[] featureFactor = new float[]{1.15f, 10f, 1.5f, 2.2f, 4f, 1.35f, 1.5f};
     private float[] average, firstMinimum, secondMinimum;
 
     /**
@@ -27,7 +27,7 @@ public class FacialExpressionDescriptor {
 
         // Sum up all the values
         for (int i = 0; i < FeatureImporter.FEATURE_COLUMN_NAMES.length; i++) {
-            for (int y = 0; y < amountOfTrainingFrames; y++) {
+            for (int y = 0; y < TRAINING_FRAME_AMOUNT; y++) {
                 Float featureValue = featureFrames[y].getFeatures()[i];
                 if (featureValue != null) {
                     average[i] += featureValue;
@@ -37,7 +37,7 @@ public class FacialExpressionDescriptor {
 
         // And calculate the average and the minima
         for (int i = 0; i < FeatureImporter.FEATURE_COLUMN_NAMES.length; i++) {
-            average[i] = average[i] / amountOfTrainingFrames;
+            average[i] = average[i] / TRAINING_FRAME_AMOUNT;
             firstMinimum[i] = average[i] - average[i] / (2f * featureFactor[i]);
             secondMinimum[i] = average[i] + average[i] / (2f * featureFactor[i]);
         }
