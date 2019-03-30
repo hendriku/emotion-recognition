@@ -44,25 +44,42 @@ public class MeasureEntry{
 	 *  Other: null
 	 */
 	public String getEmotion() {
-		int i = 1;
+		switch (getEmotionIndex()) {
+			case 0:
+				return "NEUTRAL";
+			case 1:
+				return "SADNESS";
+			case 2:
+				return "FEAR";
+			case 3:
+				return "JOY";
+			case 4:
+				return "DISGUST";
+			default:
+				return null;
+		}
+	}
+
+	/**
+	 *  Get the emotion index for a believable list.
+	 *
+	 * @return the index of the emotion in a list of values
+	 *  NEUTRAL = 0
+	 *  SADNESS = 1
+	 *  FEAR = 2
+	 *  JOY = 3
+	 *  DISGUST = 4
+	 *  Other: -INFINITY
+	 */
+	public int getEmotionIndex() {
+		int i = 0;
 		for (Integer value : values) {
 			if (value == 1) {
-				switch (i) {
-					case 1:
-						return "NEUTRAL";
-					case 2:
-						return "SADNESS";
-					case 3:
-						return "FEAR";
-					case 4:
-						return "JOY";
-					case 5:
-						return "DISGUST";
-				}
+				return i;
 			}
 			i++;
 		}
-		return null;
+		return Integer.MIN_VALUE;
 	}
 
 	/**

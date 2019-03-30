@@ -74,11 +74,11 @@ class EmotionClassifier {
             // maIsLarge.addEntry(Arrays.asList(0, 0, 1, 1, 0), 0.7f);
             Measure measure = dempsterHandler.addMeasure();
             measure.addEntry(expression.getMatchingBinaries(), expression.getConfidence());
-
-            // This can be done for multiple measures
-            // They have to be accumulated
-            dempsterHandler.accumulateAllMeasures();
         }
+
+        // This can be done for multiple measures
+        // They have to be accumulated
+        dempsterHandler.accumulateAllMeasures();
 
         // Return the finally accumulated measures
         return dempsterHandler.getFirstMeasure();
@@ -95,7 +95,11 @@ class EmotionClassifier {
         List<MeasureEntry> prioList = new ArrayList<>(emotion.getMeasureEntrys());
         prioList.sort((o1, o2) -> Double.compare(o2.getProbability(), o1.getProbability()));
 
-        System.out.println((i+1) + ". " + prioList.get(0).getEmotion() + " = Plausability: " + emotion.calculatePlausability(1) + ", Belief: " + emotion.calculateBelief(1) + ", Doubt: " + emotion.calculateDoubt(1));
+        MeasureEntry winner = prioList.get(0);
+        System.out.println((i+1) + ". " + winner.getEmotion()
+                + " = Plausability: " + emotion.calculatePlausability(winner.getEmotionIndex())
+                + ", Belief: " + emotion.calculateBelief(winner.getEmotionIndex())
+                + ", Doubt: " + emotion.calculateDoubt(winner.getEmotionIndex()));
     }
 
 }

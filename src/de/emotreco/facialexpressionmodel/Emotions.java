@@ -29,7 +29,7 @@ final class Emotions {
         put("Horizontale Nasenfalten", "low");
         put("Vertikale Nasenfalten", "low");
         put("Wangenfalten", "low");
-        put("Mundöffnung", "low,medium,high");
+        put("Mundöffnung", "");
     }};
 
     static final LinkedHashMap<String, String> SADNESS = new LinkedHashMap<String, String>(){{
@@ -37,9 +37,9 @@ final class Emotions {
         put("Augenöffnung", "low,medium");
         put("Brauenabstand", "medium");
         put("Horizontale Nasenfalten", "medium");
-        put("Vertikale Nasenfalten", "low,medium,high");
+        put("Vertikale Nasenfalten", "");
         put("Wangenfalten", "low,medium");
-        put("Mundöffnung", "low,medium,high");
+        put("Mundöffnung", "");
     }};
 
     static final LinkedHashMap<String, String> FEAR = new LinkedHashMap<String, String>(){{
@@ -47,8 +47,8 @@ final class Emotions {
         put("Augenöffnung", "high");
         put("Brauenabstand", "high");
         put("Horizontale Nasenfalten", "high");
-        put("Vertikale Nasenfalten", "low,medium,high");
-        put("Wangenfalten", "low,medium,high");
+        put("Vertikale Nasenfalten", "");
+        put("Wangenfalten", "");
         put("Mundöffnung", "high");
     }};
 
@@ -57,9 +57,9 @@ final class Emotions {
         put("Augenöffnung", "high");
         put("Brauenabstand", "high");
         put("Horizontale Nasenfalten", "low");
-        put("Vertikale Nasenfalten", "low,medium,high");
+        put("Vertikale Nasenfalten", "");
         put("Wangenfalten", "medium,high");
-        put("Mundöffnung", "low,medium,high");
+        put("Mundöffnung", "");
     }};
 
     static final LinkedHashMap<String, String> DISGUST = new LinkedHashMap<String, String>(){{
@@ -69,6 +69,6 @@ final class Emotions {
         put("Horizontale Nasenfalten", "medium");
         put("Vertikale Nasenfalten", "middle,high");
         put("Wangenfalten", "medium");
-        put("Mundöffnung", "low,medium,high");
+        put("Mundöffnung", "");
     }};
 }

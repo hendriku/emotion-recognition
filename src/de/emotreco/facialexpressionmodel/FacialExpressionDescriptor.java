@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class FacialExpressionDescriptor {
 
     private static int amountOfTrainingFrames = 35;
-    private static float[] featureFactor = new float[]{1.5f, 1.5f, 1.5f, 1.8f, 1.8f, 1.35f, 1.5f};
+    private static float[] featureFactor = new float[]{1.25f, 10f, 1.5f, 2.3f, 4f, 1.35f, 1.5f};
     private float[] average, firstMinimum, secondMinimum;
 
     /**
@@ -81,7 +81,8 @@ public class FacialExpressionDescriptor {
         return new FacialExpression(
                 key,
                 "low",
-                -(0.5f / firstMinimum[i]) * x + 1f
+                - (1 / (firstMinimum[i] * firstMinimum[i] * 2)) * x * x + 1
+                // (0.5f / (firstMinimum[i] - average[i])) * x + 1f
         );
     }
 
@@ -113,7 +114,7 @@ public class FacialExpressionDescriptor {
         return new FacialExpression(
                 key,
                 "high",
-                Math.min(0.5f / (secondMinimum[i] - average[i]) * (x - average[i]), 1)
+                Math.min((0.5f / secondMinimum[i]) * x, 1)
         );
     }
 
