@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecb3a386-d081-4462-b20e-7d11313d68dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/Emotions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/Emotions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/emotreco/main/dempster/MeasureEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/emotreco/main/dempster/MeasureEntry.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,55 +21,38 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="139">
-                  <caret line="65" selection-start-line="65" selection-end-line="65" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/Emotions.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="583">
-                  <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/Emotions.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="118">
-                  <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="34" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/Emotions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="583">
+              <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="28" column="79" lean-forward="true" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -126,9 +104,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="714" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -244,13 +223,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Main1_1">
+    <configuration name="Main1_1" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="de.emotreco.main.EmotionRecognitionMain" />
       <module name="emotion-recognition" />
       <option name="PROGRAM_PARAMETERS" value="data/emo_muster_1_1.csv" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main1_2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="de.emotreco.main.EmotionRecognitionMain" />
+      <module name="emotion-recognition" />
+      <option name="PROGRAM_PARAMETERS" value="data/emo_muster_1_2.csv" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main1_3" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="de.emotreco.main.EmotionRecognitionMain" />
+      <module name="emotion-recognition" />
+      <option name="PROGRAM_PARAMETERS" value="data/emo_muster_1_3.csv" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -265,11 +260,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.Test All" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main1_1" />
+      <item itemvalue="Application.Main1_2" />
+      <item itemvalue="Application.Main1_3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main1_1" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +294,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34613000" />
+    <option name="totallyTimeSpent" value="35835000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -309,7 +306,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="813" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.28040057" />
@@ -321,8 +318,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.3325301" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.47710842" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.38280165" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47710842" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
@@ -377,21 +374,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java</url>
-          <line>53</line>
-          <properties>
-            <option name="count-filter" value="21" />
-            <option name="count-filter-enabled" value="true" />
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -600,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/Emotions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
@@ -614,10 +589,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        <state relative-caret-position="222">
+          <caret line="28" column="79" lean-forward="true" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
