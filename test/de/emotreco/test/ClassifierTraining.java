@@ -1,4 +1,4 @@
-package de.emotreco.main.test;
+package de.emotreco.test;
 
 import de.emotreco.main.EmotionClassifier;
 import de.emotreco.main.dempster.Measure;

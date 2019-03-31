@@ -18,7 +18,7 @@ public class FacialExpressionDescriptor {
     /**
      * Create a descriptor containing the definitions for when an expression is categorised as one of low, medium or high.
      *
-     * @param featureFrames The first known frames from the csv file. For the WBS task this means the first 35 frames. Others a randomly.
+     * @param featureFrames The first known frames from the csv file. For the WBS task this means the first 35 frames. Others are randomly.
      */
     public FacialExpressionDescriptor(FeatureFrame[] featureFrames) {
         average = new float[FeatureImporter.FEATURE_COLUMN_NAMES.length];
