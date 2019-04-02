@@ -46,7 +46,7 @@ public class CSVFrame {
      * Get the row number of the frames from the csv data
      * @return Content of Nr.
      */
-    public int getFrameNumber() {
+    public Integer getFrameNumber() {
         return columns.get("Nr.");
     }
 
@@ -54,7 +54,7 @@ public class CSVFrame {
      * Get the x coordinate of the upper left edge of the region of interest (RoI)
      * @return Content of x
      */
-    public int getX() {
+    public Integer getX() {
         return columns.get("x");
     }
 
@@ -62,7 +62,7 @@ public class CSVFrame {
      * Get the y coordinate of the upper left edge of the region of interest (RoI)
      * @return Content of y
      */
-    public int getY() {
+    public Integer getY() {
         return columns.get("y");
     }
 
@@ -70,7 +70,7 @@ public class CSVFrame {
      * Get the width of the region of interest (RoI)
      * @return Content of xright
      */
-    public int getWidth() {
+    public Integer getWidth() {
         return columns.get("xright");
     }
 
@@ -78,7 +78,7 @@ public class CSVFrame {
      * Get the height of the region of interest (RoI)
      * @return Content of ylow
      */
-    public int getHeight() {
+    public Integer getHeight() {
         return columns.get("ylow");
     }
 
@@ -86,7 +86,7 @@ public class CSVFrame {
      * Get the pixel-based value for measured forehead wrinkles via the furrowing of the browe
      * @return Content of fob
      */
-    public int getFurrowingOfBrowe() {
+    public Integer getFurrowingOfBrowe() {
         return columns.get("fob");
     }
 
@@ -94,7 +94,7 @@ public class CSVFrame {
      * Get the pixel indicator for detected points on an oval of the left eye
      * @return Content of lea
      */
-    public int getLeftEyeAperture() {
+    public Integer getLeftEyeAperture() {
         return columns.get("lea");
     }
 
@@ -102,7 +102,7 @@ public class CSVFrame {
      * Get the pixel indicator for detected points on an oval of the right eye
      * @return Content of lea
      */
-    public int getRightEyeAperture() {
+    public Integer getRightEyeAperture() {
         return columns.get("rea");
     }
 
@@ -110,7 +110,7 @@ public class CSVFrame {
      * Get the pixel-based value for measured distance of the left browe
      * @return Content of lbd
      */
-    public int getLeftBroweDistance() {
+    public Integer getLeftBroweDistance() {
         return columns.get("lbd");
     }
 
@@ -118,7 +118,7 @@ public class CSVFrame {
      * Get the pixel-based value for measured distance of the right browe
      * @return Content of rbd
      */
-    public int getRightBroweDistance() {
+    public Integer getRightBroweDistance() {
         return columns.get("rbd");
     }
 
@@ -126,7 +126,7 @@ public class CSVFrame {
      * Get the pixel-based value for measured horizontal nose crinkles
      * @return Content of hnc
      */
-    public int getHorizontalNoseCrinkles() {
+    public Integer getHorizontalNoseCrinkles() {
         return columns.get("hnc");
     }
 
@@ -134,7 +134,7 @@ public class CSVFrame {
      * Get the pixel-based value for measured vertical nose crinkles
      * @return Content of vnc
      */
-    public int getVerticalNoseCrinkles() {
+    public Integer getVerticalNoseCrinkles() {
         return columns.get("vnc");
     }
 
@@ -142,7 +142,7 @@ public class CSVFrame {
      * Get the pixel-based value for measured left cheek wrinkle
      * @return Content of lcw
      */
-    public int getLeftCheekWrinkle() {
+    public Integer getLeftCheekWrinkle() {
         return columns.get("lcw");
     }
 
@@ -150,7 +150,7 @@ public class CSVFrame {
      * Get the pixel-based value for measured right cheek wrinkle
      * @return Content of rcw
      */
-    public int getRightCheekWrinkle() {
+    public Integer getRightCheekWrinkle() {
         return columns.get("rcw");
     }
 
@@ -158,7 +158,7 @@ public class CSVFrame {
      * Get the pixel-based value for measured mouth aperture
      * @return Content of ma
      */
-    public int getMouthAperture() {
+    public Integer getMouthAperture() {
         return columns.get("ma");
     }
 

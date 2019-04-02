@@ -3,7 +3,8 @@ package de.emotreco.facialexpressionmodel;
 import de.emotreco.featuremodel.FeatureFrame;
 import de.emotreco.featuremodel.FeatureImporter;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
 
 
 /**
@@ -53,17 +54,19 @@ public class FacialExpressionDescriptor {
         FacialExpression[] winners = new FacialExpression[frame.getFeatures().length];
         Float[] frameFeatures = frame.getFeatures();
         for (int i = 0; i < frameFeatures.length; i++) {
-            FacialExpression[] currentExpressions = new FacialExpression[3];
+            if (frameFeatures[i] != null) {
+                String key = FacialExpressions.EXPRESSIONS.get(FeatureImporter.FEATURE_COLUMN_NAMES[i]);
 
-            String key = FacialExpressions.EXPRESSIONS.get(FeatureImporter.FEATURE_COLUMN_NAMES[i]);
-            currentExpressions[0] = calculateLow(key, i, frameFeatures[i]);
-            currentExpressions[1] = calculateMedium(key, i, frameFeatures[i]);
-            currentExpressions[2] = calculateHigh(key, i, frameFeatures[i]);
+                // calculate all values and sort
+                ArrayList<FacialExpression> currentExpressions = new ArrayList<>();
+                currentExpressions.add(calculateLow(key, i, frameFeatures[i]));
+                currentExpressions.add(calculateMedium(key, i, frameFeatures[i]));
+                currentExpressions.add(calculateHigh(key, i, frameFeatures[i]));
+                Collections.sort(currentExpressions);
 
-            Arrays.sort(currentExpressions);
-
-            // get the most confident facial expression, winner takes all
-            winners[i] = currentExpressions[0];
+                // get the most confident facial expression, winner takes all
+                winners[i] = currentExpressions.get(0);
+            }
         }
 
         return winners;

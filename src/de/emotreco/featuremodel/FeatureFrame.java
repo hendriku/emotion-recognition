@@ -22,14 +22,33 @@ public class FeatureFrame {
         // Normalize all the values relatively to the face size
         float faceFactor = csvFrame.getWidth() * csvFrame.getHeight() / 10000f;
 
-        // Set (and merge some) feature values
-        features.put("fob", (float) csvFrame.getFurrowingOfBrowe() / faceFactor);
-        features.put("ea", ((csvFrame.getLeftEyeAperture() + csvFrame.getRightEyeAperture()) / 2f) / faceFactor);
-        features.put("bd", ((csvFrame.getLeftBroweDistance() + csvFrame.getRightBroweDistance()) / 2f) / faceFactor);
-        features.put("hnc", (float) csvFrame.getHorizontalNoseCrinkles() / faceFactor);
-        features.put("vnc", (float) csvFrame.getVerticalNoseCrinkles() / faceFactor);
-        features.put("cw", ((csvFrame.getLeftCheekWrinkle() + csvFrame.getRightCheekWrinkle()) / 2f) / faceFactor);
-        features.put("ma", (float) csvFrame.getMouthAperture() / faceFactor);
+        // Set (and merge some) feature values. Be aware that values can be null
+        putFeature("fob", faceFactor, csvFrame.getFurrowingOfBrowe());
+        putFeature("ea", faceFactor, csvFrame.getLeftEyeAperture(), csvFrame.getRightEyeAperture());
+        putFeature("bd", faceFactor, csvFrame.getLeftEyeAperture(), csvFrame.getRightEyeAperture());
+        putFeature("hnc", faceFactor, csvFrame.getHorizontalNoseCrinkles());
+        putFeature("vnc", faceFactor, csvFrame.getVerticalNoseCrinkles());
+        putFeature("cw", faceFactor, csvFrame.getLeftCheekWrinkle(), csvFrame.getRightEyeAperture());
+        putFeature("ma", faceFactor, csvFrame.getMouthAperture());
+    }
+
+    private void putFeature(String key, float faceFactor, Integer... csvValues) {
+        Float value = null;
+        int countedValues = 0;
+
+        for (Integer csvValue : csvValues) {
+            if (csvValue != null) {
+                if (value == null) value = 0f;
+                countedValues++;
+                value += (float) csvValue / faceFactor;
+            }
+        }
+
+        if (countedValues > 0) {
+            value /= countedValues;
+        }
+
+        features.put(key, value);
     }
 
     /**

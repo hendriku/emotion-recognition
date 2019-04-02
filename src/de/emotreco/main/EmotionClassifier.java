@@ -78,8 +78,11 @@ public class EmotionClassifier {
             // the propability has to be calculated together with discreting "large" via a function F(Large) = 0.7
             // Measure maIsLarge = dempsterHandler.addMeasure();
             // maIsLarge.addEntry(Arrays.asList(0, 0, 1, 1, 0), 0.7f);
-            Measure measure = dempsterHandler.addMeasure();
-            measure.addEntry(expression.getMatchingBinaries(), expression.getConfidence());
+            // If there is no data for an expression it does not count as measure
+            if (expression != null) {
+                Measure measure = dempsterHandler.addMeasure();
+                measure.addEntry(expression.getMatchingBinaries(), expression.getConfidence());
+            }
         }
 
         // This can be done for multiple measures
