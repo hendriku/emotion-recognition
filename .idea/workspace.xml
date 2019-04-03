@@ -11,11 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ecb3a386-d081-4462-b20e-7d11313d68dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/emo_muster_1_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/emo_muster_1_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/emotreco/csvmodel/CSVFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/emotreco/csvmodel/CSVFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/emotreco/featuremodel/FeatureFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/emotreco/featuremodel/FeatureFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,20 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="80" column="81" selection-start-line="80" selection-start-column="81" selection-end-line="80" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+            <state relative-caret-position="195">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,18 +40,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/de/emotreco/test/ClassifierTraining.java">
+        <entry file="file://$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1080">
+              <caret line="83" column="52" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/emo_muster_1_2.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/Emotions.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -75,21 +67,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
-              <folding>
-                <element signature="e#2448#2449#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/emotreco/featuremodel/FeatureFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
+            <state relative-caret-position="825">
               <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -177,7 +157,6 @@
         <option value="$PROJECT_DIR$/src/de/emotreco/main/csvimport/CSVImporter.java" />
         <option value="$PROJECT_DIR$/src/de/emotreco/dempster/DempsterHandler.java" />
         <option value="$PROJECT_DIR$/src/de/emotreco/csvimport/CSVImporter.java" />
-        <option value="$PROJECT_DIR$/data/emo_muster_1_2.csv" />
         <option value="$PROJECT_DIR$/src/de/emotreco/main/Emotions.java" />
         <option value="$PROJECT_DIR$/src/de/emotreco/main/FacialExpressionDescriptor.java" />
         <option value="$PROJECT_DIR$/src/de/emotreco/main/EmotionRecognition.java" />
@@ -198,14 +177,17 @@
         <option value="$PROJECT_DIR$/data/emo_muster_1_1.csv" />
         <option value="$PROJECT_DIR$/src/de/emotreco/csvmodel/CSVFrame.java" />
         <option value="$PROJECT_DIR$/src/de/emotreco/featuremodel/FeatureFrame.java" />
-        <option value="$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java" />
         <option value="$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java" />
+        <option value="$PROJECT_DIR$/test/de/emotreco/test/ClassifierTraining.java" />
+        <option value="$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java" />
+        <option value="$PROJECT_DIR$/data/emo_muster_1_2.csv" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -215,6 +197,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,6 +227,13 @@
               <item name="emotion-recognition" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="emotreco" type="462c0819:PsiDirectoryNode" />
+              <item name="facialexpressionmodel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emotion-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emotion-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="emotreco" type="462c0819:PsiDirectoryNode" />
               <item name="featuremodel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -252,12 +243,21 @@
               <item name="emotreco" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="emotion-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emotion-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emotion-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emotion-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,12 +375,17 @@
       <workItem from="1553940795564" duration="5962000" />
       <workItem from="1554022100075" duration="3055000" />
       <workItem from="1554192474383" duration="1650000" />
-      <workItem from="1554234461528" duration="1310000" />
+      <workItem from="1554234461528" duration="1560000" />
+      <workItem from="1554298137429" duration="3991000" />
+      <workItem from="1554886761929" duration="345000" />
+      <workItem from="1554894114962" duration="500000" />
+      <workItem from="1554926005746" duration="152000" />
+      <workItem from="1554926405334" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47812000" />
+    <option name="totallyTimeSpent" value="53056000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,10 +397,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="24" width="1440" height="813" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2918455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31330472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -404,13 +409,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49642345" visible="true" weight="0.3325301" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49570817" weight="0.48554218" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4985694" weight="0.47710842" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="7" show_stripe_button="false" weight="0.32969603" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5035765" side_tool="true" visible="true" weight="0.3325301" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50429183" side_tool="true" weight="0.6373494" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32771084" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -537,9 +542,6 @@
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/nio/file/Files.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/FormatFlagsConversionMismatchException.java" />
-    <entry file="file://$PROJECT_DIR$/data/emo_muster_1_2.csv">
-      <provider editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/emotreco/main/EmotionRecognition.java" />
     <entry file="file://$PROJECT_DIR$/src/de/emotreco/classifier/FacialExpression.java" />
     <entry file="file://$PROJECT_DIR$/src/de/emotreco/classifier/FacialExpressionDescriptor.java" />
@@ -619,27 +621,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/de/emotreco/test/ClassifierTraining.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="870">
+          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/Emotions.java">
+    <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="195">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpression.java">
+    <entry file="file://$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="1080">
+          <caret line="83" column="52" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/emo_muster_1_2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/emotreco/featuremodel/FeatureFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
           <folding>
-            <element signature="e#2448#2449#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2058#2059#0" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -680,32 +701,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/emotreco/featuremodel/FeatureFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        <state relative-caret-position="214">
+          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2058#2059#0" expanded="true" />
-            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
+            <element signature="e#2448#2449#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/FacialExpressionDescriptor.java">
+    <entry file="file://$PROJECT_DIR$/src/de/emotreco/facialexpressionmodel/Emotions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/emotreco/main/EmotionClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="80" column="81" selection-start-line="80" selection-start-column="81" selection-end-line="80" selection-end-column="81" />
+        <state relative-caret-position="255">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>

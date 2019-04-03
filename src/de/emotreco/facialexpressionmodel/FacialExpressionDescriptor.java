@@ -13,7 +13,7 @@ import java.util.Collections;
 public class FacialExpressionDescriptor {
 
     public static final int TRAINING_FRAME_AMOUNT = 35;
-    private static final float[] featureFactor = new float[]{1.15f, 10f, 1.5f, 2.2f, 4f, 1.35f, 1.5f};
+    private static final float[] featureFactor = new float[]{1.9f, 1f, 2f, 2f, 3f, 1.5f, 4f};
     private float[] average, firstMinimum, secondMinimum;
 
     /**

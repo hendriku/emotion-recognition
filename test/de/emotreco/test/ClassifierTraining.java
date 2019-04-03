@@ -18,25 +18,31 @@ public class ClassifierTraining {
      */
     private static final String[][] trainingEmotionSolutions = new String[][] {
             { // file 1
-                "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
-                "FEAR","FEAR","FEAR","FEAR","FEAR",
-                "SADNESS","SADNESS","SADNESS","SADNESS","SADNESS",
-                "DISGUST","DISGUST","DISGUST","DISGUST","DISGUST",
-                "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "SADNESS","SADNESS","SADNESS","SADNESS","SADNESS",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "FEAR","FEAR","FEAR","FEAR","FEAR",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "JOY","JOY","JOY","JOY","JOY",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
             },
             { // file 2
-                "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
-                "FEAR","FEAR","FEAR","FEAR","FEAR",
-                "SADNESS","SADNESS","SADNESS","SADNESS","SADNESS",
-                "DISGUST","DISGUST","DISGUST","DISGUST","DISGUST",
-                "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "SADNESS","SADNESS","SADNESS","SADNESS","SADNESS",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "FEAR","FEAR","FEAR","FEAR","FEAR",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "JOY","JOY","JOY","JOY","JOY",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
             },
             { // file 3
-                "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
-                "FEAR","FEAR","FEAR","FEAR","FEAR",
-                "SADNESS","SADNESS","SADNESS","SADNESS","SADNESS",
-                "DISGUST","DISGUST","DISGUST","DISGUST","DISGUST",
-                "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "SADNESS","SADNESS","SADNESS","SADNESS","SADNESS",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "FEAR","FEAR","FEAR","FEAR","FEAR",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
+                    "JOY","JOY","JOY","JOY","JOY",
+                    "NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL","NEUTRAL",
             },
     };
 
@@ -57,7 +63,11 @@ public class ClassifierTraining {
 
         System.out.println("Using data/emo_muster_1_3.csv...");
         compareToSolution(classifier.classifyFile("data/emo_muster_1_3.csv"), trainingEmotionSolutions[2]);
+
+        System.out.println("OVERALL PERFORMANCE: " + MathUtils.round(overallPerformance / 3f) + "%");
     }
+
+    private static float overallPerformance = 0;
 
     /**
      * Compares the measures of the classifier to the solution emotions.
@@ -83,8 +93,10 @@ public class ClassifierTraining {
             belief += measuredResult[i].calculateBelief(winner.getEmotionIndex());
             doubt += measuredResult[i].calculateDoubt(winner.getEmotionIndex());
         }
+        float performance = (hits / (float) TRAINING_FRAME_AMOUNT) * 100f;
+        overallPerformance += performance;
         System.out.println("\nTRAINING RESULT:\n"
-                + "PERFORMANCE=" + MathUtils.round((hits / (float) TRAINING_FRAME_AMOUNT) * 100f) + "% "
+                + "PERFORMANCE=" + MathUtils.round(performance) + "% "
                 + "|| DISTRIBUTION: NEUTRAL=" + emotionCounts[0] + ", SADNESS=" + emotionCounts[1]
                 + ", FEAR=" + emotionCounts[2] + ", JOY=" + emotionCounts[3] + ", DISGUST=" + emotionCounts[4]);
         System.out.println("AVGERAGE Plausibility=" + MathUtils.round(plausability / (double) TRAINING_FRAME_AMOUNT)

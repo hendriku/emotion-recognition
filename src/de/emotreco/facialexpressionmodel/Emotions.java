@@ -26,8 +26,8 @@ final class Emotions {
         put("Stirnfalten", "low");
         put("Augenöffnung", "medium");
         put("Brauenabstand", "medium");
-        put("Horizontale Nasenfalten", "low");
-        put("Vertikale Nasenfalten", "low");
+        put("Horizontale Nasenfalten", "medium");
+        put("Vertikale Nasenfalten", "medium");
         put("Wangenfalten", "low");
         put("Mundöffnung", "");
     }};
@@ -67,7 +67,7 @@ final class Emotions {
         put("Augenöffnung", "low");
         put("Brauenabstand", "low");
         put("Horizontale Nasenfalten", "medium");
-        put("Vertikale Nasenfalten", "middle,high");
+        put("Vertikale Nasenfalten", "medium");
         put("Wangenfalten", "medium");
         put("Mundöffnung", "");
     }};

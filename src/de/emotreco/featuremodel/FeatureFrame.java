@@ -20,15 +20,15 @@ public class FeatureFrame {
      */
     FeatureFrame(CSVFrame csvFrame) {
         // Normalize all the values relatively to the face size
-        float faceFactor = csvFrame.getWidth() * csvFrame.getHeight() / 10000f;
+        float faceFactor = csvFrame.getWidth() * csvFrame.getHeight() / 10_000f;
 
         // Set (and merge some) feature values. Be aware that values can be null
         putFeature("fob", faceFactor, csvFrame.getFurrowingOfBrowe());
         putFeature("ea", faceFactor, csvFrame.getLeftEyeAperture(), csvFrame.getRightEyeAperture());
-        putFeature("bd", faceFactor, csvFrame.getLeftEyeAperture(), csvFrame.getRightEyeAperture());
+        putFeature("bd", faceFactor, csvFrame.getLeftBroweDistance(), csvFrame.getRightBroweDistance());
         putFeature("hnc", faceFactor, csvFrame.getHorizontalNoseCrinkles());
         putFeature("vnc", faceFactor, csvFrame.getVerticalNoseCrinkles());
-        putFeature("cw", faceFactor, csvFrame.getLeftCheekWrinkle(), csvFrame.getRightEyeAperture());
+        putFeature("cw", faceFactor, csvFrame.getLeftCheekWrinkle(), csvFrame.getRightCheekWrinkle());
         putFeature("ma", faceFactor, csvFrame.getMouthAperture());
     }
 
